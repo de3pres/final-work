@@ -6,3 +6,12 @@
 string[] array = new string[4] {"Hello", "мир", "789", "день"};
 string[] Newarray = new string[array.Length];
 int a = 0;
+for (int i = 0; i < array.Length; i++)
+    {
+        if(array[i].Length <= 3)
+        { 
+           Newarray[a] = array[i];
+           a++;
+        }
+    }
+PrintArray(Newarray);
